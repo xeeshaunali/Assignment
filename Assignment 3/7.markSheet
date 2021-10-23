@@ -1,0 +1,118 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "19563db3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please Enter English Marks: 80\n",
+      "Please Enter Islamiat Marks: 80\n",
+      "Please Enter Physics Marks: 80\n",
+      "Please Enter Chemistry Marks: 80\n",
+      "Please Enter Urdu Marks: 80\n",
+      "\n",
+      "\n",
+      " Total Marks 500\n",
+      "\n",
+      "\n",
+      " English Marks 80 \n",
+      " Islamiat Marks 80 \n",
+      " Physics Makrs 80 \n",
+      " Chemistry Marks 80 \n",
+      " Urdu Marks 80\n",
+      "\n",
+      "\n",
+      " Your Obtained Makrs out of 500 are:  400.0 \n",
+      " Percentage is:  80.0 % \n",
+      " Your Grade is A1\n"
+     ]
+    }
+   ],
+   "source": [
+    "eng = int(input(\"Please Enter English Marks: \"))\n",
+    "isl = int(input(\"Please Enter Islamiat Marks: \"))\n",
+    "phy = int(input(\"Please Enter Physics Marks: \"))\n",
+    "chem = int(input(\"Please Enter Chemistry Marks: \"))\n",
+    "urdu = int(input(\"Please Enter Urdu Marks: \"))\n",
+    "\n",
+    "totalMarks = 500;\n",
+    "obtainedMarks = float(eng + isl + phy + chem + urdu);\n",
+    "percentage = float ((obtainedMarks/totalMarks) * 100);\n",
+    "print(\"\\n\")\n",
+    "print(\" Total Marks\", totalMarks)\n",
+    "print(\"\\n\")\n",
+    "print(\" English Marks\", eng, \"\\n Islamiat Marks\", isl, \"\\n Physics Makrs\", phy, \"\\n Chemistry Marks\", chem, \"\\n Urdu Marks\", urdu)\n",
+    "print(\"\\n\")\n",
+    "\n",
+    "if percentage>=80 and percentage<=100:\n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is A1\");\n",
+    "    \n",
+    "elif percentage>=70 and percentage<=79:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is A\");\n",
+    "\n",
+    "elif percentage>=60 and percentage<=69:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is B\");\n",
+    "\n",
+    "elif percentage>=50 and percentage<=59:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is C\");\n",
+    "\n",
+    "elif percentage>=40 and percentage<=49:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is D\");\n",
+    "\n",
+    "elif percentage>=35 and percentage<=39:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n Your Grade is E\");\n",
+    "    \n",
+    "elif percentage<=34 and percentage>=0:\n",
+    "    \n",
+    "    print(\" Your Obtained Makrs out of 500 are: \",   obtainedMarks, \"\\n\",\"Percentage is: \",percentage,\"%\",\"\\n YOU HAVE FAILED THE EXAMINATION\");\n",
+    "\n",
+    "elif percentage<=-1 and percentage>100:\n",
+    "\n",
+    "    print(\"Invalid Marks Entered\")\n",
+    "\n",
+    "else:\n",
+    "    \n",
+    "    print(\"Invalid Marks Entered\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "85521f8b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
